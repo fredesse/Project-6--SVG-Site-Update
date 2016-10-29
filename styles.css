@@ -27,9 +27,9 @@ a {
   color: #39add1;
   font-weight: 700;
   }
-/*  a:hover {
+  a:hover {
     color: #111;
-  }*/
+  }
 
 header {
   padding-top: 10px;
@@ -97,9 +97,8 @@ footer {
   fill: #39add1;
 }
 
-.nav-item:hover a {
-  color: purple;
-  fill: purple;
+.nav-item:hover .nav-svg {
+  fill: #111;
 }
 
 .Layer_1 {
