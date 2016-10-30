@@ -94,10 +94,6 @@ footer {
   margin-bottom: 1em;
 }
 
-.nav-svg {
-  fill: #39add1;
-}
-
 .nav-item:hover .nav-svg {
   fill: #111;
 }
@@ -116,16 +112,16 @@ DOG ANIMATIONS
 .red-brow-left,
 .red-brow-right {
   fill: #EAAA7F;
-  transform-origin: 50% 50%;
-  transition: transform .9s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: transform .9s;
 }
 
 #red:hover .red-brow-right {
-  transform: rotate(15deg);
+  -webkit-transform: rotate(20deg) translateX(2px);
 }
 
 #red:hover .red-brow-left {
-  transform: rotate(-15deg);
+  -webkit-transform: rotate(-20deg) translateX(-2px);
 }
 
 
@@ -134,43 +130,71 @@ DOG ANIMATIONS
 .f-eye-right,
 .f-eye-left {
   fill: #2D3339;
-  transform-origin: 50% 50%;
-  transition: transform .9s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: transform .9s;
 }
 
 .f-brow-right,
 .f-brow-left {
   fill: #F4C6A6;
-  transform-origin: 50% 50%;
-  transition: transform .9s;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: transform .9s;
 }
 
 #fawn:hover .f-eye-right {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 #fawn:hover .f-eye-left {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
 }
 
 #fawn:hover .f-brow-right {
-  transform: rotate(15deg) translateY(-8px);
+  -webkit-transform: rotate(15deg) translateY(-8px);
 }
 
 #fawn:hover .f-brow-left {
-  transform: rotate(-15deg) translateY(-8px);
+  -webkit-transform: rotate(-15deg) translateY(-8px);
+}
+
+/*-------SABLE---------*/
+
+.sable-brow-right,
+.sable-brow-left {
+  fill: #BA8058;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: transform .9s;
+}
+
+#sable:hover .sable-brow-left {
+  -webkit-transform: rotate(10deg) translateY(-6px);
+}
+
+#sable:hover .sable-brow-right {
+  -webkit-transform: rotate(-10deg) translateY(3px);
+}
+
+/*-------B&T---------*/
+
+.bt-brow-right,
+.bt-brow-left {
+  fill: #BA8058;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transition: transform .9s;
+}
+
+#bt:hover .bt-brow-right {
+  -webkit-transform: rotate(-10deg) translateX(-2px) translateY(3px);
+}
+
+#bt:hover .bt-brow-left {
+  -webkit-transform: rotate(10deg) translateX(2px) translateY(3px);
 }
 
 
-
-
-
-
-
-
-
-
-
+/*********************************
+MEDIA QUERIES
+*********************************/
 
 
 @media (max-width: 420px) {
@@ -181,29 +205,9 @@ DOG ANIMATIONS
 
   #logo-h1 {
     display: inline-block;
+    color: #EAAA7F;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
