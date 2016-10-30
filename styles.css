@@ -91,6 +91,7 @@ footer {
 .dog-pic {
   width: 170px;
   height: 170px;
+  margin-bottom: 1em;
 }
 
 .nav-svg {
@@ -104,6 +105,73 @@ footer {
 .Layer_1 {
   height: 14px;
 }
+
+
+/*********************************
+DOG ANIMATIONS
+*********************************/
+
+/*-------RED---------*/
+
+.red-brow-left,
+.red-brow-right {
+  fill: #EAAA7F;
+  transform-origin: 50% 50%;
+  transition: transform .9s;
+}
+
+#red:hover .red-brow-right {
+  transform: rotate(15deg);
+}
+
+#red:hover .red-brow-left {
+  transform: rotate(-15deg);
+}
+
+
+/*-------FAWN---------*/
+
+.f-eye-right,
+.f-eye-left {
+  fill: #2D3339;
+  transform-origin: 50% 50%;
+  transition: transform .9s;
+}
+
+.f-brow-right,
+.f-brow-left {
+  fill: #F4C6A6;
+  transform-origin: 50% 50%;
+  transition: transform .9s;
+}
+
+#fawn:hover .f-eye-right {
+  transform: scale(1.2);
+}
+
+#fawn:hover .f-eye-left {
+  transform: scale(1.2);
+}
+
+#fawn:hover .f-brow-right {
+  transform: rotate(15deg) translateY(-8px);
+}
+
+#fawn:hover .f-brow-left {
+  transform: rotate(-15deg) translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 420px) {
   
