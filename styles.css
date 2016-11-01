@@ -85,6 +85,10 @@ footer {
 }
 
 #logo-h1 {
+  color: #EAAA7F;
+}
+
+.logo-text {
   display: none;
 }
 
@@ -197,15 +201,14 @@ MEDIA QUERIES
 *********************************/
 
 
-@media (max-width: 420px) {
+@media (min-width: 420px) {
   
   .logo-text {
-    display: none;
+    display: inline-block;
   }
 
   #logo-h1 {
-    display: inline-block;
-    color: #EAAA7F;
+    display: none;
   }
 }
 
